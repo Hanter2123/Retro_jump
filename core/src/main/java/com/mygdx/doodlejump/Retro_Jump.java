@@ -17,6 +17,7 @@ public class DoodleJumpGame extends Game {
     public static final int SCREEN_WIDTH = 600;
     public static final int SCREEN_HEIGHT = 800;
     private int hashScore;
+    public Startmenu startmenu;
     public GameScreen gameScreen;
     public MenuScreen menuScreen;
 
@@ -28,8 +29,9 @@ public class DoodleJumpGame extends Game {
 
         gameScreen = new GameScreen(this);
         menuScreen = new MenuScreen(this);
+        startmenu = new Startmenu(this);
 
-        this.setScreen(menuScreen);
+        this.setScreen(startmenu);
     }
 
     public void setHashScore(int score) {
